@@ -5,16 +5,15 @@
 This project builds a machine learning model to classify news articles as **REAL** or **FAKE** using Natural Language Processing (NLP).
 It uses TF-IDF vectorization and a Support Vector Machine (SVM) model to analyze textual data.
 
----
 
 ## Project Structure
 
+```ascii
 fake-news-detector/
 │── fake_news_detector.ipynb
 │── sample_news.csv (optional)
 │── README.md
-
----
+```
 
 ## Technologies Used
 
@@ -24,7 +23,6 @@ fake-news-detector/
 * TF-IDF Vectorizer
 * LinearSVC (SVM)
 
----
 
 ## Dataset
 
@@ -39,7 +37,6 @@ The dataset contains news articles with the following columns:
 
 For processing, title and text are combined into a single column: **content** and unnecessary columns like Unnamed: 0 is removed.
 
----
 
 ## Methodology
 
@@ -66,24 +63,20 @@ For processing, title and text are combined into a single column: **content** an
 
    * Custom function to classify new/unseen news articles
 
----
 
 ## Results
 
 * Accuracy: **~93%**
 * Balanced performance on both REAL and FAKE classes
 
----
 
 ## Example Usage
 
 Input:
-"<news-article>"
+"""<_news-article_>"""
 
 Output:
 REAL/FAKE
-
----
 
 ## Limitations
 
@@ -92,7 +85,6 @@ REAL/FAKE
 * Cannot detect sarcasm or nuanced misinformation
 * Depends on dataset quality
 
----
 
 ## Future Improvements
 
@@ -101,7 +93,6 @@ REAL/FAKE
 * Deploy as a web application using Flask
 * Add confidence scoring for predictions
 
----
 
 ## Note
 
